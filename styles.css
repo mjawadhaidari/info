@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* جلوگیری از اسکرول */
+}
+
+.container {
+    position: relative;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex; /* استفاده از flexbox */
+    justify-content: center; /* مرکز کردن افقی */
+    align-items: center; /* مرکز کردن عمودی */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.profile-card {
+    position: relative; /* تغییر به relative */
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic-container {
+    width: 120px; /* اندازه دایو */
+    height: 120px; /* اندازه دایو */
+    border: 5px solid black; /* خط مشکی دور تصویر */
+    border-radius: 50%; /* گرد کردن دایو */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* جلوگیری از خروج تصویر از دایو */
+    margin: 0 auto 15px; /* مرکز کردن دایو و فاصله پایین */
+}
+
+.profile-pic {
+    width: 100%; /* اندازه تصویر به اندازه دایو */
+    height: 100%; /* اندازه تصویر به اندازه دایو */
+    object-fit: cover; /* حفظ تناسب تصویر */
+    border-radius: 50%; /* گرد کردن تصویر */
+}
+
+h1 {
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+p {
+    color: #e0e0e0;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icon.instagram {
+    color: #C13584;
+}
+
+.social-icon.youtube {
+    color: #FF0000;
+}
+
+.social-icon.telegram {
+    color: #0088CC;
+}
+
+.social-icon.whatsapp {
+    color: #25D366;
+}
+
+.social-icon.phone {
+    color: #83d38abd;
+}
